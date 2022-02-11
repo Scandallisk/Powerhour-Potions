@@ -59,6 +59,20 @@ Path:  base > scripts > globals > static_data > resource_effects > items.lua
 }
 
 
+
+## base_mobile_mods.lua
+
+### Lines 130-133
+
+Path:  base > scripts > base_mobile_mods.lua
+
+   	--SCAN ADDED power hour
+	PowerHourBuffPlus = { },
+	PowerHourBuffTimes = { },
+
+
+
+
 ## elixir_of_powerhour.xml
 
 ### This requires a new template .xml file
