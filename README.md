@@ -76,7 +76,7 @@ Path:  base > templates > items > elixir_of_powerhour.xml
 	    <ObjectVariableComponent>
 		    <StringVariable Name="PluralName">Elixirs of Power Hour</StringVariable>
 		    <StringVariable Name="ResourceType">PowerHourBuff</StringVariable>
-        <DoubleVariable Name="UnitWeight">0.001</DoubleVariable>
+        <DoubleVariable Name="UnitWeight">1</DoubleVariable>
 	    </ObjectVariableComponent>
         <ScriptEngineComponent>
 		    <LuaModule Name="stackable"/>
