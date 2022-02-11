@@ -63,6 +63,8 @@ Path:  base > scripts > globals > static_data > resource_effects > items.lua
 
 ### This requires a new template .xml file
 
+- Create a new file in the following directory using the filename listed above:
+
 Path:  base > templates > items > elixir_of_powerhour.xml
 
     <ObjectTemplate>
