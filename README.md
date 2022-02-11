@@ -137,6 +137,7 @@ Path:  base > scripts > base_mobile_mods.lua
 
 Path:  base > templates > items > elixir_of_powerhour.xml
 
+    --SCAN ADDED
     <ObjectTemplate>
      <Name>[FF9900]Elixir of Power Hour[-]</Name>
 	    <ClientId>2007</ClientId>
