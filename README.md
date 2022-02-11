@@ -15,9 +15,9 @@ Produced by SCAN & BooGaard from HOPE Society
 
 Simply copy paste the code below into the custom code below and follow the instructions on adding the code to a specific line, creating a new file, or adding to an existing table. 
 
-For most chagnes,  you will be required to restart your server for these changes to take effect.  
+- For most changes,  you will be required to restart your server for these changes to take effect.  
 
-To protect our community, please schedule downtime before deploying this change.
+- To protect our community, please schedule downtime before deploying this change.
 
 This code was produced for PublicServer version 1.4.7
 
