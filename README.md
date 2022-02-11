@@ -9,7 +9,7 @@ Community Server custom development feature that permits users to consume a poti
 
 - To create the potion, Admin characters can type /create elixir_of_powerhour
 
-### Produced by <FF9900>SCAN</FF9900> & BooGaard from HOPE Society
+#### Produced by SCAN & BooGaard from HOPE Society
 
 ## Instructions
 
