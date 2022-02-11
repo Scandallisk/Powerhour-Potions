@@ -1,7 +1,5 @@
 # Legends of Aria Power Hour Potions
-Community Server custom development world-chat functionality for Legends of Aria.
-
-This feature permits users to consume a potion that will increase their skill gain chances up to 200%.  
+Community Server custom development feature that permits users to consume a potion that will increase their skill gain chances up to 200%.  
 
 - This feature makes use of the item table and mobile effect library.
 
