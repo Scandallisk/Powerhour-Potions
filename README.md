@@ -9,6 +9,8 @@ This feature permits users to consume a potion that will increase their skill ga
 
 - Administrators will be responsible for adding these items to merchants, loot tables, or any other player delivery system of their discretion.
 
+- To create the potion, Admin characters can type /create elixir_of_powerhour
+
 Produced by SCAN & BooGaard from HOPE Society
 
 ## Instructions
@@ -26,13 +28,67 @@ This code was produced for PublicServer version 1.4.7
 
 # Files requiring an update:
 
+
+## powerhourbuff.lua
+
+### This requires a new .LUA file
+
+- Create a new file in the following directory using the filename listed above:
+
+Path:  base > scripts > globals > mobile_effects > items > powerhourbuff.lua
+
+	--SCAN ADDED
+	MobileEffectLibrary.PowerHourBuff = 
+	{
+    	PersistDeath = true,
+    	PersistSession = true,
+
+	    OnEnterState = function(self,root,target,args)
+		self.Duration = args.Duration or self.Duration
+		self.Amount = args.Amount or self.Amount
+		self.ParentObj:PlayEffectWithArgs("ManaInfuseGive", 5.0)
+		self.ParentObj:SystemMessage("You suddenly become more skillful..", "info")
+		AddBuffIcon(self.ParentObj, "PowerHourBuff","Power Hour","backpack","+"..self.Amount.."00% Skill Gain Chance", false)
+		SetMobileMod(self.ParentObj, "PowerHourBuffPlus", "PowerHourBuff", self.Amount)
+	    end,
+
+	    OnExitState = function(self,root,target,args)
+		self.ParentObj:PlayEffectWithArgs("ManaInfuseReceive", 5.0)
+		self.ParentObj:SystemMessage("Your skill potion has worn off...", "info")
+		RemoveBuffIcon(self.ParentObj, "PowerHourBuff")
+		SetMobileMod(this, "PowerHourBuffPlus", "PowerHourBuff", nil)
+	    end,
+
+	    GetPulseFrequency = function(self,root)
+			return self.Duration
+		end,
+
+	    AiPulse = function(self,root)
+		EndMobileEffect(root)
+		end,
+
+	    Duration = TimeSpan.FromMinutes(1),
+	    Amount = 1,
+	}
+	
+
+
+## main.lua
+
+- This line of code can be added at the bottom of the list.
+
+Path:  bbase > scripts > globals > mobile_effects > items > main.lua
+
+    --SCAN ADDED
+    require 'globals.mobile_effects.items.powerhourbuff'
+    
+	
+
 ## items.lua
 
 Path:  base > scripts > globals > static_data > resource_effects > items.lua
 
     --SCAN ADDED
-    -- This code will permit users to consume a potion that puts a 60 minute buff 
-    -- and increases skill gain chance up to 200%.
     ResourceEffectData.PowerHourBuff = {
         NoDismount = true,
         NoAutoTarget = true,
