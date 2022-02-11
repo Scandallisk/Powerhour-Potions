@@ -122,7 +122,7 @@ Path:  base > scripts > globals > static_data > resource_effects > items.lua
 
 Path:  base > scripts > base_mobile_mods.lua
 
-   	--SCAN ADDED power hour
+   	--SCAN ADDED
 	PowerHourBuffPlus = { },
 	PowerHourBuffTimes = { },
 
