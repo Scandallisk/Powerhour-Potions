@@ -1,0 +1,15 @@
+<ObjectTemplate>
+  <Name>[FF9900]Elixir of Power Hour[-]</Name>
+	<ClientId>2007</ClientId>
+	<Hue>830</Hue>
+	<Color>FFFF00</Color>
+	<SharedStateEntry name="Weight" type="int" value="1"/>
+	<ObjectVariableComponent>
+		<StringVariable Name="PluralName">Elixirs of Power Hour</StringVariable>
+		<StringVariable Name="ResourceType">PowerHourBuff</StringVariable>
+    <DoubleVariable Name="UnitWeight">1</DoubleVariable>
+	</ObjectVariableComponent>
+    <ScriptEngineComponent>
+		<LuaModule Name="stackable"/>
+	</ScriptEngineComponent>				    	
+</ObjectTemplate>
