@@ -32,6 +32,7 @@ This code was produced for PublicServer version 1.4.7
 ### This requires a new .LUA file
 
 - Create a new file in the following directory using the filename listed above:
+- OR download the file on this repository.
 
 Path:  base > scripts > globals > mobile_effects > items > powerhourbuff.lua
 
@@ -132,6 +133,7 @@ Path:  base > scripts > base_mobile_mods.lua
 ### This requires a new template .xml file
 
 - Create a new file in the following directory using the filename listed above:
+- OR download the file on this repository.
 
 Path:  base > templates > items > elixir_of_powerhour.xml
 
