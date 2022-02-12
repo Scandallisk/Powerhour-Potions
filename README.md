@@ -76,7 +76,7 @@ Path:  base > scripts > globals > mobile_effects > items > powerhourbuff.lua
 
 - This line of code can be added at the bottom of the list.
 
-Path:  bbase > scripts > globals > mobile_effects > items > main.lua
+Path:  base > scripts > globals > mobile_effects > items > main.lua
 
     --SCAN ADDED
     require 'globals.mobile_effects.items.powerhourbuff'
